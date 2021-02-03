@@ -1,0 +1,86 @@
+h2{
+    font-size: 40px;
+    color: red;
+}
+
+/*Partie honoraires*/
+
+.honoraires .banner {
+    max-height: 100vh;
+    min-height: 100%;
+    background-image: url("/assets/img/agence.jpeg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Quicksand', sans-serif;
+    font-display: swap;
+}
+
+
+
+/*Partie estimation*/
+
+.estimation .banner {
+    max-height: 100vh;
+    min-height: 100%;
+    background-image: url("/assets/img/estimation.jpeg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Quicksand', sans-serif;
+    font-display: swap;
+}
+
+
+
+/*Partie Vente*/
+
+.vente .banner {
+    max-height: 100vh;
+    min-height: 100%;
+    background-image: url("/assets/img/vente.jpeg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Quicksand', sans-serif;
+    font-display: swap;
+}
+
+/* Partie location*/
+
+.location .banner {
+    max-height: 100vh;
+    min-height: 100%;
+    background-image: url("/assets/img/location.jpeg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Quicksand', sans-serif;
+    font-display: swap;
+}
+
+/* Partie recherche */
+
+.recherche .banner {
+    max-height: 100vh;
+    min-height: 100%;
+    background-image: url("/assets/img/recherche.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Quicksand', sans-serif;
+    font-display: swap;
+}
+
+/* Partie reseau */
+
+.reseau .banner {
+    max-height: 100vh;
+    min-height: 100%;
+    background-image: url("/assets/img/reseau-pro.jpeg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    font-family: 'Quicksand', sans-serif;
+    font-display: swap;
+}

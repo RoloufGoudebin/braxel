@@ -1,0 +1,9 @@
+h2{
+    color: blue;
+    font-size: 40px;
+}
+
+.accordion h2{
+    font-size: 20px;
+    color: black;
+}

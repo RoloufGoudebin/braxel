@@ -1,0 +1,35 @@
+.mission .banner{
+    max-height: 100vh;
+    background-image: url("/assets/img/agence.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Quicksand', sans-serif;
+    font-display: swap;
+}
+
+.mission h2{
+    font-size: 40px;
+    color: red;
+}
+
+.mission h3{
+    color: red;
+}
+
+.charte h2{
+    font-size: 40px;
+    color: red;
+}
+
+.charte .banner {
+    max-height: 100vh;
+    min-height: 100%;
+    background-image: url("/assets/img/charte.jpeg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Quicksand', sans-serif;
+    font-display: swap;
+}
+

@@ -1,0 +1,38 @@
+/* Header */
+.header{
+    margin-top: 30px;
+    background-image: url('src/assets/img/banner-1.jpg');
+}
+
+.header h1{
+    font-size: 80px;
+    font-weight: 900;
+    color: white
+}
+
+.header p{
+    font-size: 30px;
+    color: white;
+}
+
+.header .btn-outline-danger{
+    font-size: 2em;
+}
+
+.search-form{
+    background-color: white;
+    opacity: 0.3;
+}
+
+
+/* Agents immobilier*/
+
+.agent-immobilier h2{
+    color: blue;
+    font-size: 40px;
+}
+
+/*sous titre image presentation*/
+.presentation p{
+    font-size: 25px;
+}
