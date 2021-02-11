@@ -2,10 +2,6 @@ import { Component, OnInit, OnDestroy, SimpleChanges } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription, Observable } from 'rxjs'; 
 import { AppComponent } from '../app.component';
-import { FirepageService } from '../firepage.service';
-import "firebase/auth";
-import "firebase/firestore";
-import "firebase/analytics";
 
 
 
@@ -18,10 +14,9 @@ import "firebase/analytics";
 export class HomeComponent implements OnInit {
 
 
-  constructor(private firepageService: FirepageService) {
+  constructor() {
   }
 
   ngOnInit(): void {
-    this.firepageService.getPage('baXHyUxZHqpxTWk8z6fu');
   }
 }

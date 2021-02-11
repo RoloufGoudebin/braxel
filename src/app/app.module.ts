@@ -29,9 +29,7 @@ import { AngularFirestoreModule } from "@angular/fire/firestore";
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
