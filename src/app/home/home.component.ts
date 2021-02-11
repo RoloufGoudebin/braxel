@@ -3,6 +3,11 @@ import { ActivatedRoute } from '@angular/router';
 import { Subscription, Observable } from 'rxjs'; 
 import { AppComponent } from '../app.component';
 import { FirepageService } from '../firepage.service';
+import "firebase/auth";
+import "firebase/firestore";
+import "firebase/analytics";
+
+
 
 
 @Component({
@@ -12,18 +17,11 @@ import { FirepageService } from '../firepage.service';
 })
 export class HomeComponent implements OnInit {
 
-  page: string;
 
   constructor(private firepageService: FirepageService) {
   }
 
   ngOnInit(): void {
-    this.getPage('baXHyUxZHqpxTWk8z6fu')
+    this.firepageService.getPage('baXHyUxZHqpxTWk8z6fu');
   }
-
-
-  getPage(name: string){
-    this.page = this.firepageService.getPage(name);
-  }
-
 }

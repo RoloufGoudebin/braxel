@@ -11,6 +11,9 @@ import { AvisComponent } from './avis/avis.component';
 import { AgenceComponent } from './agence/agence.component';
 import { ServicesComponent } from './services/services.component';
 import { FaqComponent } from './faq/faq.component';
+import { environment } from "src/environments/environment";
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import { FaqComponent } from './faq/faq.component';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
