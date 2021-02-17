@@ -1,7 +1,11 @@
 /* Header */
 .header{
     margin-top: 30px;
-    background-image: url('src/assets/img/banner-1.jpg');
+    background-image: url('src/assets/img/home_banner.gif');
+    background-size: 80em;
+    background-repeat: no-repeat;
+    margin-left: 20%;
+
 }
 
 .header h1{
