@@ -1,6 +1,6 @@
 .mission .banner{
     max-height: 100vh;
-    background-image: url("/assets/img/agence.jpeg");
+    background-image: url("/assets/img/...");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -32,4 +32,3 @@
     font-family: 'Quicksand', sans-serif;
     font-display: swap;
 }
-
