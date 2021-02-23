@@ -8,18 +8,26 @@
     font-display: swap;
 }
 
+
 .mission h2{
-    font-size: 40px;
-    color: red;
+  font-size: 2.5em;
+  color: #EE5C5A;
+  font-style:'Montserrat', sans-serif;
+  padding-bottom: 0.5em;
 }
 
 .mission h3{
-    color: red;
+  font-size: 1.5em;
+  color: #EE5C5A;
+  font-style:'Montserrat', sans-serif;
+  padding-bottom: 0.5em;
 }
 
 .charte h2{
-    font-size: 40px;
-    color: red;
+  font-size: 2.5em;
+  color: #EE5C5A;
+  font-style:'Montserrat', sans-serif;
+  padding-bottom: 0.5em;
 }
 
 .charte .banner {
