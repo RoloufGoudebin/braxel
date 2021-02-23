@@ -14,6 +14,7 @@ import { FaqComponent } from './faq/faq.component';
 import { environment } from "src/environments/environment";
 import { AngularFireModule } from "@angular/fire";
 import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AngularFirestoreModule } from "@angular/fire/firestore";
     AvisComponent,
     AgenceComponent,
     ServicesComponent,
-    FaqComponent
+    FaqComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
