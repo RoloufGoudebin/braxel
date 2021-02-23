@@ -8,7 +8,7 @@ h2{
 .honoraires .banner {
     max-height: 100vh;
     min-height: 100%;
-    background-image: url("/assets/img/agence.jpeg");
+    background-image: url("/assets/img/home.jpg");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center center;
@@ -23,7 +23,7 @@ h2{
 .estimation .banner {
     max-height: 100vh;
     min-height: 100%;
-    background-image: url("/assets/img/estimation.jpeg");
+    background-image: url("/assets/img/estimation-oui.jpg");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center center;
@@ -38,7 +38,7 @@ h2{
 .vente .banner {
     max-height: 100vh;
     min-height: 100%;
-    background-image: url("/assets/img/vente.jpeg");
+    background-image: url("/assets/img/braxel_clef.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center center;
@@ -64,7 +64,7 @@ h2{
 .recherche .banner {
     max-height: 100vh;
     min-height: 100%;
-    background-image: url("/assets/img/recherche.jpg");
+    background-image: url("/assets/img/home_app.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center center;
