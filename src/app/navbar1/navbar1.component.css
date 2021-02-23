@@ -5,3 +5,11 @@
 .nav-item .active{
     font-weight: 900;
 }
+
+.top-navbar{
+    background-color: #233353;
+}
+
+.top-navbar .nav-link{
+    color: white !important;
+}

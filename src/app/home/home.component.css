@@ -1,31 +1,39 @@
 /* Header */
 .header{
-    margin-top: 30px;
     background-image: url('src/assets/img/home.jpg');
     background-size: 80em;
     background-repeat: no-repeat;
-    margin-left: 20%;
+    background-position: center;
 
 }
 
 .header h1{
     font-size: 80px;
     font-weight: 900;
-    color: white;
+    color: #233353;
     font-family: 'Montserrat', sans-serif;
 }
 
 .header p{
     font-size: 30px;
-    color: white;
+    color: #233353;
 }
 
 .header .btn-outline-danger{
     font-size: 2em;
+    color: #EE5C5A;
 }
 
+.header .btn-outline-danger:hover{
+    font-size: 2em;
+    color: white;
+    background-color: #EE5C5A;
+}
+
+
+/* Search-form */
 .search-form{
-    background: rgba(248, 248, 248, 0.3)
+    background: rgba(35, 51, 83, 0.6)
 }
 
 .search-form p{
@@ -33,11 +41,43 @@
     opacity: 1 !important;
 }
 
+h2{
+    color: #233353
+}
+
+.search-form h2{
+    font-size: 2.3em;
+    color: #EE5C5A;
+}
+
+.text-search-form{
+    font-size: 2em;
+    color: #EE5C5A;
+}
+
+.btn-outline-primary{
+    color:#233353;
+    background-color: white;
+    border-color: #233353;
+}
+
+.btn-outline-primary:hover{
+    color: white;
+    background-color: #EE5C5A;
+    border-color: #EE5C5A;
+}
+
+.btn-outline-danger:active{
+    color: white !important ;
+    background-color: #EE5C5A !important;
+    border-color: #EE5C5A !important;
+}
+
 
 /* Agents immobilier*/
 
 .agent-immobilier h2{
-    color: blue;
+    color: #233353;
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
 }

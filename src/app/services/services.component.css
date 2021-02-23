@@ -1,6 +1,32 @@
 h2{
-    font-size: 40px;
-    color: red;
+    font-size: 4em;
+    color: #EE5C5A;
+}
+
+h4{
+    font-size: 1.6em;
+    color: #233353;
+}
+
+p{
+    font-size: 1.1em;
+}
+
+li{
+    list-style-type: none;
+    font-size: 1.1em;
+}
+
+ul li:before {
+    font-family: 'IcoMoon';
+    content: '\ea10';
+    margin:0 5px 0 -20px;
+    color: #EE5C5A;
+}
+
+b{
+    font-weight: 800;
+    color: #EE5C5A;
 }
 
 /*Partie honoraires*/
