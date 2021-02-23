@@ -1,9 +1,11 @@
 .nav-item{
-    font-size: 20px;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 26px;
 }
 
 .nav-item .active{
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .top-navbar{
@@ -12,4 +14,6 @@
 
 .top-navbar .nav-link{
     color: white !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
 }
