@@ -6,6 +6,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    padding-top: 30px;
 
 }
 
@@ -20,16 +21,16 @@
     font-size: 19px;
     font-weight: lighter;
     color: #ffff;
-    font-family: 'Source Sans Pro',sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .header .btn-outline-danger{
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #EE5C5A;
 }
 
 .header .btn-outline-danger:hover{
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: white;
     background-color: #EE5C5A;
 }
