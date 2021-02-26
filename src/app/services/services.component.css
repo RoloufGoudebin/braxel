@@ -10,9 +10,15 @@ h4{
     color: #233353;
     font-family: 'Source Sans Pro', sans-serif;
     padding-bottom: 0.5em;
-
-
 }
+
+img{
+  max-width : 65%;
+  height: auto;
+  display: block;
+  margin: 15%;
+}
+
 
 p{
     font-size: 1.1em;
@@ -46,8 +52,6 @@ b{
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center center;
-    font-family: 'Quicksand', sans-serif;
-    font-display: swap;
 }
 
 
@@ -61,8 +65,7 @@ b{
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center center;
-    font-family: 'Quicksand', sans-serif;
-    font-display: swap;
+
 }
 
 
@@ -76,8 +79,7 @@ b{
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center center;
-    font-family: 'Quicksand', sans-serif;
-    font-display: swap;
+
 }
 
 /* Partie location*/
@@ -89,8 +91,7 @@ b{
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center center;
-    font-family: 'Quicksand', sans-serif;
-    font-display: swap;
+
 }
 
 /* Partie recherche */
@@ -102,8 +103,7 @@ b{
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center center;
-    font-family: 'Quicksand', sans-serif;
-    font-display: swap;
+
 }
 
 /* Partie reseau */
@@ -115,6 +115,5 @@ b{
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center bottom;
-    font-family: 'Quicksand', sans-serif;
-    font-display: swap;
+
 }
