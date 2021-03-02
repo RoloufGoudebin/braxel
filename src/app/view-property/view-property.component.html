@@ -1,16 +1,44 @@
 <div class="container mt-5 pt-5">
-    <div class="rowpt-5 mt-5">
-        <h1>{{property.TypeDescription}}</h1>
-        <h2>{{property.Zip}} {{property.City}}</h2>
-        <h3>{{property.StartPrice}}</h3>
+    <div *ngIf="property" class="row pt-5 mt-5">
+        <h1 *ngIf="property.TypeDescription">{{property.TypeDescription}}</h1>
+        <h2 *ngIf="property.City">{{property.Zip}} {{property.City}}</h2>
+        <h3 *ngIf="property.StartPrice">{{property.StartPrice}}</h3>
         <img src="{{property.LargePicture}}" class="img-fluid">
         <ul>
-            <li>Type de bien : {{property.MainTypeName}}</li>
-            <li>Commune : {{property.City}}</li>
-            <li>Surface habitable : {{property.SurfaceTotal}}m²</li>
-            <li>Surface du terrain : {{property.SurfaceGarden}}m²</li>
-            <li>Énergie/niveau PEG : {{property.EnergyPerformance}}</li>
+            <li *ngIf="property.MainTypeName">Type de bien : {{property.MainTypeName}}</li>
+            <li *ngIf="property.City">Commune : {{property.City}}</li>
+            <li *ngIf="property.SurfaceTotal">Surface habitable : {{property.SurfaceTotal}}m²</li>
+            <li *ngIf="property.SurfaceGarden">Surface du terrain : {{property.SurfaceGarden}}m²</li>
+            <li *ngIf="property.EnergyPerformance">Énergie/niveau PEG : {{property.EnergyPerformance}}</li>
+        </ul>
+        <ul>
+            <li *ngIf="property.SurfaceTotal">Superficie: {{property.SurfaceTotal}}</li>
+            <li *ngIf="property.NumberOfBedRooms">Chambres : {{property.NumberOfBedRooms}}</li>
+            <li *ngIf="property.NumberOfBathRooms">Salles(s) de bain : {{property.NumberOfBathRooms}}</li>
+            <li *ngIf="property.NumberOfShowerRooms">Salle(s) de douche : {{property.NumberOfShowerRooms}}</li>
+            <li *ngIf="property.NumberOfGarages">Garage(s) : {{property.NumberOfGarages}}</li>
         </ul>
         <h4>Particularités</h4>
+        <ul>
+            <li *ngIf="property.KitchenName">Cuisine : {{property.KitchenName}}</li>
+            <li *ngIf="property.WindowGlazing">Vitrage : {{property.WindowGlazing}}</li>
+            <li *ngIf="property.OrientationT">Orientation : {{property.OrientationT}}</li>
+            <li *ngIf="property.MainStyleName">Style : {{property.MainStyleName}}</li>
+            <li *ngIf="property.HasLift ">Ascensceur : Oui</li>
+            <li *ngIf="property.Floor">Étage(s) : {{property.Floor}}</li>
+            <li *ngIf="property.ConstructionYear">Année de construction: {{property.ConstructionYear}}</li>
+            <li *ngIf="property.SurfaceTerrace">Terrasse : {{property.SurfaceTerrace}}</li>
+            <li *ngIf="property.ConstructionName">Type de construction : {{property.ConstructionName}}</li>
+            <li *ngIf="property.SurfaceGarden">Jardin : {{property.SurfaceGarden}} m²</li>
+        </ul>
+        <h4>Description</h4>
+        <p *ngIf="property.DescriptionA">{{property.DescriptionA}}</p>
+        <div class="row">
+            <div *ngIf="lat" class="row">
+                <agm-map [latitude]="lat" [longitude]="long" [zoom]="12">
+                    <agm-marker [latitude]="lat" [longitude]="long"></agm-marker>
+                </agm-map>
+            </div>
+        </div>
     </div>
 </div>

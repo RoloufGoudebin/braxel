@@ -19,6 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { PropertyListComponent } from './property-list/property-list.component';
 import { ViewPropertyComponent } from './view-property/view-property.component';
 
+
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +40,10 @@ import { ViewPropertyComponent } from './view-property/view-property.component';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyATpESf9vy24duvdNS3TeSOQE7XBUSnUtA'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
