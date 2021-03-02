@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'services', component: ServicesComponent},
   { path: 'faq', component: FaqComponent},
   { path: 'contact', component: ContactComponent},
-  { path: 'biens-immobiliers', component: ViewPropertyComponent}
+  { path: 'biens-immobiliers/:id', component: ViewPropertyComponent}
 ];
 
 @NgModule({

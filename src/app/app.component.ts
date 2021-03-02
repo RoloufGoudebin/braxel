@@ -1,8 +1,6 @@
-import { Component } from '@angular/core';
-import firebase from "firebase/app";
-import "firebase/auth";
-import "firebase/firestore";
-import DataSnapshot = firebase.database.DataSnapshot;
+import { Component, OnInit } from '@angular/core';
+import { OmnicasaService } from './omnicasa.service';
+import { PropertyList, Property } from './interface';
 
 
 @Component({
@@ -10,9 +8,13 @@ import DataSnapshot = firebase.database.DataSnapshot;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent{
   title = 'braxel';
 
-  constructor() {
+  constructor(public omnicasa: OmnicasaService) {
   }
+
+
+
+
 }

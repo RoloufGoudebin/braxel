@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { OmnicasaService } from '../omnicasa.service';
 import { Observable } from 'rxjs';
 import { PropertyList, Property } from '../interface';
@@ -11,18 +11,21 @@ import { response } from 'express';
 })
 export class PropertyListComponent implements OnInit {
 
-  num:number = 9;
 
   constructor(public omnicasa: OmnicasaService) { }
 
-  propertyList: Property[];
-  propertyList9: Property[];
 
-  ngOnInit(): void {
-    this.omnicasa.getPropertyList()
-      .subscribe(response => {
-        this.propertyList = response.GetPropertyListJsonResult.Value.Items;
-      })
+  propertyList: Property[];
+
+  ngOnInit(): void{
+    this.getPropertyList();
   }
 
+  getPropertyList(){
+    this.omnicasa.getPropertyList()
+    .subscribe(response => {
+      this.propertyList = response.GetPropertyListJsonResult.Value.Items;
+      console.log(this.propertyList);
+    })
+  }
 }

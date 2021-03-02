@@ -3,5 +3,10 @@ export interface PropertyList {
 }
 
 export interface Property {
-    city : string;
+    City : string;
+    ID: number;
+    TypeDescription: string;
+    Zip: number;
+    LargePicture: string;
+    StartPrice: number;
 }

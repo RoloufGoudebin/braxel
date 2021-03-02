@@ -1,1 +1,16 @@
-<p>view-property works!</p>
+<div class="container mt-5 pt-5">
+    <div class="rowpt-5 mt-5">
+        <h1>{{property.TypeDescription}}</h1>
+        <h2>{{property.Zip}} {{property.City}}</h2>
+        <h3>{{property.StartPrice}}</h3>
+        <img src="{{property.LargePicture}}" class="img-fluid">
+        <ul>
+            <li>Type de bien : {{property.MainTypeName}}</li>
+            <li>Commune : {{property.City}}</li>
+            <li>Surface habitable : {{property.SurfaceTotal}}m²</li>
+            <li>Surface du terrain : {{property.SurfaceGarden}}m²</li>
+            <li>Énergie/niveau PEG : {{property.EnergyPerformance}}</li>
+        </ul>
+        <h4>Particularités</h4>
+    </div>
+</div>
