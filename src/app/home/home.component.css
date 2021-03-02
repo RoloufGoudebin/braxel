@@ -2,7 +2,7 @@
 
 /* Header */
 .header{
-    background-image: url('src/assets/img/home_test.jpg');
+    background-image: url('/assets/img/home_test.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -77,6 +77,17 @@ h2{
     background-color: #EE5C5A !important;
     border-color: #EE5C5A !important;
 }
+
+/* Nos biens immobiliers */
+.nos-biens h2{
+    color: #233353;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 51px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
 
 
 /* Agents immobilier*/

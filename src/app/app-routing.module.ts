@@ -5,6 +5,7 @@ import { AgenceComponent } from './agence/agence.component';
 import { ServicesComponent } from './services/services.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactComponent } from './contact/contact.component';
+import { ViewPropertyComponent } from './view-property/view-property.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'agence', component: AgenceComponent },
   { path: 'services', component: ServicesComponent},
   { path: 'faq', component: FaqComponent},
-  { path: 'contact', component: ContactComponent}
+  { path: 'contact', component: ContactComponent},
+  { path: 'biens-immobiliers', component: ViewPropertyComponent}
 ];
 
 @NgModule({

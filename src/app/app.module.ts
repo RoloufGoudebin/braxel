@@ -15,6 +15,9 @@ import { environment } from "src/environments/environment";
 import { AngularFireModule } from "@angular/fire";
 import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { ContactComponent } from './contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PropertyListComponent } from './property-list/property-list.component';
+import { ViewPropertyComponent } from './view-property/view-property.component';
 
 @NgModule({
   declarations: [
@@ -27,11 +30,14 @@ import { ContactComponent } from './contact/contact.component';
     AgenceComponent,
     ServicesComponent,
     FaqComponent,
-    ContactComponent
+    ContactComponent,
+    PropertyListComponent,
+    ViewPropertyComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
