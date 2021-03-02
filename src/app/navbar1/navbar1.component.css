@@ -1,11 +1,13 @@
 .nav-item{
-    font-size: 16px;
+    font-size: 15.5px;
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
     line-height: 26px;
 }
 
 .nav-item .active{
-    font-weight: 600;
+    font-weight: 800;
+    color:#233353;
 }
 
 .top-navbar{
@@ -15,5 +17,14 @@
 .top-navbar .nav-link{
     color: white !important;
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
+    margin: 19x;
+}
+
+img {
+margin: 3%;
+}
+
+li{
+  margin-left: 2%;
 }
