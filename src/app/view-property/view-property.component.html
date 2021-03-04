@@ -2,7 +2,9 @@
     <div *ngIf="property" class="pt-5 mt-5">
         <h1 *ngIf="property.TypeDescription">{{property.TypeDescription}}</h1>
         <h2 *ngIf="property.City">{{property.Zip}} {{property.City}}</h2>
+        <hr>
         <h3 *ngIf="property.StartPrice">{{property.StartPrice}}</h3>
+        <p class="price"> Hors droits et taxes diverses</p>
         <img src="{{property.LargePicture}}" class="img-fluid col-12">
         <ul>
             <li *ngIf="property.MainTypeName">Type de bien : {{property.MainTypeName}}</li>
@@ -11,13 +13,17 @@
             <li *ngIf="property.SurfaceGarden">Surface du terrain : {{property.SurfaceGarden}}m²</li>
             <li *ngIf="property.EnergyPerformance">Énergie/niveau PEG : {{property.EnergyPerformance}}</li>
         </ul>
-        <ul>
-            <li *ngIf="property.SurfaceTotal">Superficie: {{property.SurfaceTotal}}</li>
-            <li *ngIf="property.NumberOfBedRooms">Chambres : {{property.NumberOfBedRooms}}</li>
-            <li *ngIf="property.NumberOfBathRooms">Salles(s) de bain : {{property.NumberOfBathRooms}}</li>
-            <li *ngIf="property.NumberOfShowerRooms">Salle(s) de douche : {{property.NumberOfShowerRooms}}</li>
-            <li *ngIf="property.NumberOfGarages">Garage(s) : {{property.NumberOfGarages}}</li>
+        <div class="row">
+        <ul class="card col-4 px-1 my-3" style="width: 18rem;">
+            <li  *ngIf="property.SurfaceTotal">Superficie: {{property.SurfaceTotal}}</li>
+            <li  *ngIf="property.NumberOfBedRooms">Chambres : {{property.NumberOfBedRooms}}</li>
+            <li  *ngIf="property.NumberOfBathRooms">Salles(s) de bain : {{property.NumberOfBathRooms}}</li>
+            <li  *ngIf="property.NumberOfShowerRooms">Salle(s) de douche : {{property.NumberOfShowerRooms}}</li>
+            <li  *ngIf="property.NumberOfGarages">Garage(s) : {{property.NumberOfGarages}}</li>
         </ul>
+        </div>
+
+
         <h4>Particularités</h4>
         <ul>
             <li *ngIf="property.KitchenName">Cuisine : {{property.KitchenName}}</li>
