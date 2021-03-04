@@ -6,6 +6,7 @@ agm-map {
 p {
   color:#233353;
   font-size: 15px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .price {
@@ -50,9 +51,29 @@ h6 {
 }
 
 .card {
-  background-color: lightgrey;
+  background-color: #E4E4E4;
   font-family: "Source Sans Pro", sans-serif;
- font-size: 1.5em;
- border:none;
- font-style: #233353;
+  font-size: 1.5em;
+  border:none;
+  font-style: #233353;
+  margin: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius:10px;
+  margin-bottom: 20px;
+}
+
+ul {
+  color: #233353;
+}
+
+li {
+  color: #233353;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5em;
+  list-style-type: circle;
+}
+
+.liste {
+padding: 25px;
 }
