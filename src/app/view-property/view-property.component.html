@@ -10,7 +10,7 @@
     <div class="container">
       <ul class="row">
         <div class="col liste">
-          <li *ngIf="property.MainTypeName">Type de bien : {{property.MainTypeName}}</li>
+          <li class="info" *ngIf="property.MainTypeName">Type de bien : {{property.MainTypeName}}</li>
           <li *ngIf="property.City">Commune : {{property.City}}</li>
           <li *ngIf="property.SurfaceTotal">Surface habitable : {{property.SurfaceTotal}}m²</li>
         </div>
@@ -23,38 +23,63 @@
 
       <div align="center" class="container">
         <ul class="row">
-          <li class="col card" *ngIf="property.SurfaceTotal">Superficie
+          <div class="col card">
+        <span class="icon-object-ungroup"></span>
+          <li class="titlecard" *ngIf="property.SurfaceTotal">Superficie
             <hr> {{property.SurfaceTotal}}
           </li>
-          <li class="col card" *ngIf="property.NumberOfBedRooms">Chambres
+          </div>
+          <div class="col card">
+            <span class="icon-bed"></span>
+          <li *ngIf="property.NumberOfBedRooms">Chambres
             <hr> {{property.NumberOfBedRooms}}
           </li>
-          <li class="col card" *ngIf="property.NumberOfBathRooms">Salle(s) de bain
+          </div>
+          <div class="col card">
+            <span class="icon-bath"></span>
+          <li  *ngIf="property.NumberOfBathRooms">Salle(s) de bain
             <hr> {{property.NumberOfBathRooms}}
           </li>
-          <li class="col card" *ngIf="property.NumberOfShowerRooms">Salle(s) de douche
+          </div>
+          <div class="col card">
+            <span class="icon-shower"></span>
+          <li *ngIf="property.NumberOfShowerRooms">Salle(s) de douche
             <hr> {{property.NumberOfShowerRooms}}
           </li>
-          <li class="col card" *ngIf="property.NumberOfGarages">Garage(s)
+          </div>
+          <div class="col card">
+            <span class="icon-automobile"></span>
+          <li  *ngIf="property.NumberOfGarages">Garage(s)
             <hr> {{property.NumberOfGarages}}
           </li>
+          </div>
         </ul>
       </div>
 
 
+
       <h4>Particularités</h4>
-      <ul>
+      <div class="container">
+        <ul class="row">
+          <div class="col">
         <li *ngIf="property.KitchenName">Cuisine : {{property.KitchenName}}</li>
         <li *ngIf="property.WindowGlazing">Vitrage : {{property.WindowGlazing}}</li>
         <li *ngIf="property.OrientationT">Orientation : {{property.OrientationT}}</li>
         <li *ngIf="property.MainStyleName">Style : {{property.MainStyleName}}</li>
+        </div>
+        <div class="col">
         <li *ngIf="property.HasLift ">Ascensceur : Oui</li>
         <li *ngIf="property.Floor">Étage(s) : {{property.Floor}}</li>
         <li *ngIf="property.ConstructionYear">Année de construction: {{property.ConstructionYear}}</li>
         <li *ngIf="property.SurfaceTerrace">Terrasse : {{property.SurfaceTerrace}}</li>
+        </div>
+        <div class="col">
         <li *ngIf="property.ConstructionName">Type de construction : {{property.ConstructionName}}</li>
         <li *ngIf="property.SurfaceGarden">Jardin : {{property.SurfaceGarden}} m²</li>
+        </div>
       </ul>
+      </div>
+
       <h4>Description</h4>
       <p *ngIf="property.DescriptionA">{{property.DescriptionA}}</p>
       <div class="row">
@@ -65,4 +90,5 @@
         </div>
       </div>
     </div>
+  </div>
   </div>

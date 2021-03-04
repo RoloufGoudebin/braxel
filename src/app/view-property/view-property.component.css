@@ -1,3 +1,5 @@
+
+
 agm-map {
     height: 600px;
     width: 1200px;
@@ -53,13 +55,13 @@ h6 {
 .card {
   background-color: #E4E4E4;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.0em;
   border:none;
   font-style: #233353;
-  margin: 5px;
+  margin: 3px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius:10px;
+
   margin-bottom: 20px;
 }
 
@@ -70,9 +72,12 @@ ul {
 li {
   color: #233353;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.5em;
-  list-style-type: circle;
+  font-size: 1.3em;
+  list-style-type: none;
 }
+
+
+
 
 .liste {
 padding: 25px;
