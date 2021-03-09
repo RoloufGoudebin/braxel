@@ -23,10 +23,12 @@ export interface Property {
     SurfaceTerrace: number;
     ConstructionName: string;
     DescriptionA: string;
+    DescriptionB: string
     NumberOfBedRooms: number;
     NumberOfBathRooms: number;
     NumberOfShowerRooms: number;
     NumberOfGarages: number;
     GoogleX: number;
     GoogleY: number;
+    PriceUnitText: string;
 }
